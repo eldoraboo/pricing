@@ -39,7 +39,7 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
     });
 
     // Parse PDF content to text
-    const pdfText = await pdf(data);
+    const pdfText = await pdf(Buffer.from(data));
 
     // Split the text into lines
     const lines = pdfText.text.split("\n");

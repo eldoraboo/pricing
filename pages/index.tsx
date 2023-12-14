@@ -21,7 +21,7 @@ const IndexPage = () => {
     <div>
       <h1>EU Weekly (France)</h1>
       {tableData && (
-        <table border="1">
+        <table border={1}>
           <thead>
             <tr>
               <th>Category</th>
